@@ -1,0 +1,47 @@
+{
+  "name": "Test_Project_API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && node ./cluster.js",
+    "dev": "nodemon --exec babel-node cluster.js",
+    "lint": "eslint ./server --fix",
+    "build": "rm -rf dist && mkdir dist && babel -d ./dist ./server -s",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleva-j/Test_Project_API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kleva-j/Test_Project_API/issues"
+  },
+  "homepage": "https://github.com/kleva-j/Test_Project_API#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/node": "^7.8.3",
+    "@babel/polyfill": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/register": "^7.8.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "husky": "^4.2.1",
+    "lint-staged": "^10.0.3",
+    "nodemon": "^2.0.2"
+  }
+}
