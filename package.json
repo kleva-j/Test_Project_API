@@ -3,15 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-<<<<<<< HEAD
-  "type": "module",
-  "scripts": {
-    "start": "npm run build && node ./cluster.js",
-=======
   "scripts": {
     "start": "npm run build && node ./dist/cluster.js",
->>>>>>> Initial commit
-    "dev": "nodemon --exec babel-node cluster.js",
+    "dev": "nodemon --exec babel-node ./server/cluster.js",
     "lint": "eslint ./server --fix",
     "build": "rm -rf dist && mkdir dist && babel -d ./dist ./server -s",
     "test": ""
