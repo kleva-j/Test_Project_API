@@ -1,12 +1,14 @@
 # Test_Project_API
-A Test_Project_API application that implements basic designs and layout to show details of recent movies.
-
+Test_Project_API is an API service that fetches a list of consumer products.
 
 ## Technologies
 - NodeJS
 - Express
-- ESLint
+- Babel
+- Helmet
 - Cors
+- Node-cache
+- Body-parser
 
 ## Requirements and Installation
 
@@ -31,8 +33,9 @@ GET /products
 
 * To search for a single product
 ```
-GET /{productId}
+GET /products/:{productId}
 ```
 
 ## License
-Test_Product_API is [MIT licensed](https://github.com/kleva-j/Test_Project_API/blob/develop/LICENSE).
+ Test_Product_API is [MIT licensed](https://github.com/kleva-j/Test_Project_API/blob/develop/LICENSE).
+

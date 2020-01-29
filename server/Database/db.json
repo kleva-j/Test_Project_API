@@ -1,0 +1,82 @@
+{
+  "products": [
+    {
+      "id": 100,
+      "name":"JACKET",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/mens-better-than-naked-jacket-AVMH_LC9_hero.png",
+      "price": "$40"
+    },
+    {
+      "id": 101,
+      "name":"JACKET",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-better-than-naked-jacket-AVKL_NN4_hero.png",
+      "price": "$27"
+    },
+    {
+      "id": 102,
+      "name":"SHOE",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-single-track-shoe-ALQF_JM3_hero.png",
+      "price": "$50"
+    },
+    {
+      "id": 103,
+      "name":"Hydration Pack",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/enduro-boa-hydration-pack-AJQZ_JK3_hero.png",
+      "price": "$14.99"  
+    },
+    {
+      "id": 104,
+      "name":"JACKET",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/mens-better-than-naked-jacket-AVMH_LC9_hero.png",
+      "price": "$12.89"
+    },
+    {
+      "id": 105,
+      "name":"JACKET",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-better-than-naked-jacket-AVKL_NN4_hero.png",
+      "price": "$24"
+    },
+    {
+      "id": 106,
+      "name":"SHOE",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/womens-single-track-shoe-ALQF_JM3_hero.png",
+      "price": "$45"
+    },
+    {
+      "id": 107,
+      "name":"Hydration Pack",
+      "image-url":"http://images.thenorthface.com/is/image/TheNorthFace/236x204_CLR/enduro-boa-hydration-pack-AJQZ_JK3_hero.png",
+      "price": "$110"
+    },
+    {
+      "id": 108,
+			"name": "GLORIA HIGH LOGO SNEAKER",
+			"image-url": "https://guesseu.scene7.com/is/image/GuessEU/FLGLO4FAL12-BEIBR?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+      "price": "$91"
+    },
+    {
+      "id": 109,
+			"name": "CHECK PRINT SHIRT",
+			"image-url": "https://guesseu.scene7.com/is/image/GuessEU/M63H24W7JF0-L302-ALTGHOST?wid=1500&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+			"price": "$110"
+    },
+    {
+      "id": 110,
+			"name": "CATE RIGID BAG",
+			"image-url": "https://guesseu.scene7.com/is/image/GuessEU/HWVG6216060-TAN?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+			"price": "$94.5"
+    },
+    {
+      "id": 111,
+			"name": "GUESS CONNECT WATCH",
+			"image-url": "http://guesseu.scene7.com/is/image/GuessEU/WC0001FMSWC-G5?wid=520&fmt=jpeg&qlt=80&op_sharpen=0&op_usm=1.0,1.0,5,0&iccEmbed=0",
+			"price": "$335"
+    },
+    {
+      "id": 112,
+			"name": "'70s RETRO GLAM KEFIAH",
+			"image-url": "https://guesseu.scene7.com/is/image/GuessEU/AW6308VIS03-SAP?wid=700&amp;fmt=jpeg&amp;qlt=80&amp;op_sharpen=0&amp;op_usm=1.0,1.0,5,0&amp;iccEmbed=0",
+			"price": "$20"
+		}
+  ]
+}
