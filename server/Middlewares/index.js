@@ -1,24 +1,65 @@
-/* eslint-disable consistent-return */
-import NodeCache from 'node-cache';
+// import bodyParser from 'body-parser';
+// import compression from 'compression';
+// import hpp from 'hpp';
+// import cors from 'cors';
+// import helmet from 'helmet';
+// import logger, { winston } from './logger';
 
-const CacheMiddleware = (timeout) => (req, res, next) => {
-  const Cache = new NodeCache({ stdTTL: timeout, checkperiod: timeout * 2, useClones: false });
-  const key = `cache<=>${req.originalUrl || req.url}`;
-  const cacheContent = Cache.get(key);
-  if (cacheContent) {
-    console.log('Here ==========>');
-    return res.status(200).json({
-      status: 'Success',
-      message: 'Single Product',
-      result: cacheContent,
-    });
-  }
-  res.sendJson = res.json;
-  res.json = ({ status, result, ...rest }) => {
-    Cache.set(key, result, timeout);
-    res.sendJson({ status, ...rest, result });
-  };
-  next();
-};
+// const Middleware = (app) => {
+//   const { log } = console;
+//   log(app, '>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<\\///');
+//   app
+//     .use(cors({
+//       origin: true,
+//       methods: 'GET, HEAD, PUT, PATCH, POST, DELETE, OPTION',
+//       credentials: true,
+//       exposedHeaders: ['authorization'],
+//     }))
 
-export default CacheMiddleware;
+//     .use(helmet())
+
+//     .use(helmet.noSniff())
+
+//     .use(helmet.ieNoOpen())
+
+//     .use(helmet.frameguard({ action: 'sameorigin' }))
+
+//     .use(helmet.xssFilter())
+
+//     .use(helmet.referrerPolicy({
+//       policy: ['no-referrer', 'unsafe-url'],
+//     }))
+
+//     .use(helmet.contentSecurityPolicy({
+//       directives: {
+//         defaultSrc: ["'self'", 'default.com'],
+//         scriptSrc: ["'self'", "'unsafe-inline'"],
+//         sandbox: ['allow-forms', 'allow-scripts'],
+//         reportUri: '/report-violation',
+//         objectSrc: ["'none'"],
+//         upgradeInsecureRequests: true,
+//         workerSrc: false,
+//       },
+//     }))
+
+//     .set('trust proxy', true)
+
+//     .set('x-powered-by', false)
+
+//     .disable('x-powered-by')
+
+//     .use(compression())
+
+//     .use((req, _, next) => {
+//       logger();
+//       req.logger = winston;
+//       return next();
+//     })
+
+//     .use(bodyParser.json())
+//     .use(bodyParser.urlencoded({ extended: false }))
+
+//     .use(hpp());
+// };
+
+// export default Middleware;
