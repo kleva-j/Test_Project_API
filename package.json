@@ -7,7 +7,9 @@
     "start": "npm run build && node ./dist/cluster.js",
     "dev": "nodemon --exec babel-node ./server/cluster.js",
     "lint": "eslint ./server --fix",
-    "build": "rm -rf dist && mkdir dist && babel -d ./dist ./server -s",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "npm run clean && npm run sync:db && babel ./server --out-dir ./dist",
+    "sync:db": "cd ./dist && mkdir Database && cp ../server/Database/db.json ./Database/db.json",
     "test": ""
   },
   "repository": {
@@ -23,11 +25,15 @@
   "homepage": "https://github.com/kleva-j/Test_Project_API#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^3.21.2",
-    "morgan": "^1.9.1"
+    "hpp": "^0.2.3",
+    "morgan": "^1.9.1",
+    "node-cache": "^5.1.0",
+    "winston": "^3.2.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
