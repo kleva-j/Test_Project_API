@@ -27,7 +27,7 @@
   "homepage": "https://github.com/kleva-j/Test_Project_API#readme",
   "dependencies": {
     "body-parser": "^1.20.3",
-    "compression": "^1.7.4",
+    "compression": "^1.8.0",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.21.2",
