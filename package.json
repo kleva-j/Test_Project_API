@@ -26,17 +26,17 @@
   },
   "homepage": "https://github.com/kleva-j/Test_Project_API#readme",
   "dependencies": {
-    "body-parser": "^1.20.2",
-    "compression": "^1.7.4",
+    "body-parser": "^1.20.3",
+    "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.20.0",
+    "express": "^4.21.2",
     "helmet": "^3.23.3",
     "hpp": "^0.2.3",
-    "morgan": "^1.10.0",
+    "morgan": "^1.10.1",
     "node-cache": "^5.1.2",
-    "winston": "^3.13.0",
-    "snyk": "^1.1145.0"
+    "winston": "^3.17.0",
+    "snyk": "^1.1297.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.24.7",
