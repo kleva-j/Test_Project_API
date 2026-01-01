@@ -26,11 +26,11 @@
   },
   "homepage": "https://github.com/kleva-j/Test_Project_API#readme",
   "dependencies": {
-    "body-parser": "^1.20.3",
+    "body-parser": "^1.20.4",
     "compression": "^1.8.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
-    "express": "^4.21.2",
+    "express": "^4.22.0",
     "helmet": "^3.23.3",
     "hpp": "^0.2.3",
     "morgan": "^1.10.1",
